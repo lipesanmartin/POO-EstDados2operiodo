@@ -26,4 +26,5 @@ altura = int(input("Insura o valor da altura do retângulo em m: "))
 comodo = Retangulo(base, altura)
 comodo.retornar_lados()
 print(f"A área de pisos necessários para esse cômodo é {comodo.area()} m².")
-print(f"O perímetro do rodapé é {comodo.perimetro()} m.")  # teste
+print(f"O perímetro do rodapé é {comodo.perimetro()} m.")
+print("Teste GitHub")
