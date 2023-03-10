@@ -1,8 +1,8 @@
 class Bola:
-    def __init__(self):
-        self.cor = "branca"
-        self.circunferencia = 10
-        self.material = "borracha"
+    def __init__(self, cor, circunferencia, material):
+        self.cor = cor
+        self.circunferencia = circunferencia
+        self.material = material
         print(f"A bola de {self.material} é {self.cor}.")
 
     def troca_cor(self):
@@ -13,6 +13,6 @@ class Bola:
         print(f"A bola de {self.material} é {self.cor}.")
 
 
-bola = Bola()
+bola = Bola("branca", 10, "borracha")
 bola.troca_cor()
 bola.mostra_cor()
