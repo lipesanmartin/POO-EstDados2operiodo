@@ -26,7 +26,7 @@ class Televisao:
 
 
 tv = Televisao()
-for x in range(0, 52):
+for x in range(0, 52):  # exemplo
     tv.aumentar_volume()
-for x in range(0, 102):
+for x in range(0, 102):  # exemplo
     tv.diminuir_volume()
