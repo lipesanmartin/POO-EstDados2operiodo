@@ -15,5 +15,7 @@ class Pessoa:
         self.peso -= 1
 
     def crescer(self):
-        while self.idade < 21:
+        if self.idade < 21:
             self.altura += 0.5
+        else:
+            self.altura += 0
