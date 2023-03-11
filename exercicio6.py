@@ -2,7 +2,7 @@ class Televisao:
     def __init__(self):
         while True:
             self.canal = int(input("Insira o canal inicial (0 a 99): "))
-            if 99 > self.canal >= 0:
+            if self.canal in range(0, 100):
                 print("Canal:", self.canal)
                 break
             else:
