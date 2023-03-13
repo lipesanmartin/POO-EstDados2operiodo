@@ -57,6 +57,3 @@ bomba.alterar_quantidade_bomba()
 bomba.abastecer_litro()
 bomba.alterar_quantidade_bomba()
 bomba.encher_bomba()
-
-
-
