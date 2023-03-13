@@ -20,7 +20,7 @@ class BombaCombustivel:
         self.preco = float(input(f'Insira o novo preço do combustível "{self.tipo}".'))
         print(f"{self.tipo} agora custa R$ {self.preco} por L.")
 
-    def alterar_tipo(self):
+    def alterar_combustivel(self):
         while True:
             escolha = int(input("Escolha qual combustível gostaria de usar para abastecer:\n1 - Álcool\n2 - "
                                 "Gasolina\n3 -"
@@ -47,6 +47,16 @@ class BombaCombustivel:
         print(f"Bomba agora possui {self.quantidade} L de {self.tipo}")
 
 
-volume_inicial = int(input("Insira o conteùdo inicial da bomba em L"))
+volume_inicial = int(input("Insira o conteùdo inicial da bomba em L: "))
 
 bomba = BombaCombustivel(volume_inicial)
+bomba.alterar_combustivel()
+bomba.alterar_valor()
+bomba.abastecer_valor()
+bomba.alterar_quantidade_bomba()
+bomba.abastecer_litro()
+bomba.alterar_quantidade_bomba()
+bomba.encher_bomba()
+
+
+
