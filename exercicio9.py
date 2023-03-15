@@ -15,7 +15,5 @@ class Retangulo:
     def centro(self):
         x = self.largura / 2
         y = self.altura / 2
-        print(f"O centro do retângulo é nas coordenadas:\nX: {x}\nY: {y}")
-
-
+        print(f"O centro do retângulo é nas coordenadas:\n{Ponto(x, y)}")
 

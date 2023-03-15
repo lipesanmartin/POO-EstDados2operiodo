@@ -1,8 +1,8 @@
 class ContaCorrente:
-    def __init__(self, numero, nome, saldo):
+    def __init__(self, numero, nome):
         self.numero = numero
         self.nome = nome
-        self.saldo = saldo
+        self.saldo = 0
 
     def alternar_nome(self):
         self.nome = str(input("Insira o novo nome: "))
@@ -29,7 +29,7 @@ class ContaCorrente:
         print(f"Seu saldo é {conta.saldo:.2f}")
 
 
-conta = ContaCorrente(123456, "João", 500)
+conta = ContaCorrente(123456, "João")
 conta.alternar_nome()
 conta.deposito()
 conta.saque()
