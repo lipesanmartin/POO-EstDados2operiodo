@@ -4,8 +4,8 @@ class Macaco:
         self.bucho = []
 
     def comer(self, comida):
-            self.bucho.append(comida)
-            print(f"Macaco {self.nome} comeu {comida}.")
+        self.bucho.append(comida)
+        print(f"Macaco {self.nome} comeu {comida}.")
 
     def ver_bucho(self):
         print(f"Macaco {self.nome} possui", *self.bucho, "em seu estômago.")
