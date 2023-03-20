@@ -4,11 +4,8 @@ class Macaco:
         self.bucho = []
 
     def comer(self, comida):
-        if comida != self:  # checar da proxima vez
             self.bucho.append(comida)
             print(f"Macaco {self.nome} comeu {comida}.")
-        else:
-            print("Macacos não são canibais.")
 
     def ver_bucho(self):
         print(f"Macaco {self.nome} possui", *self.bucho, "em seu estômago.")
