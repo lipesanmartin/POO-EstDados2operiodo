@@ -10,6 +10,6 @@ class ContaInvestimento:
 
 
 conta = ContaInvestimento(123123, "Pedrinho", 1000, 10)
-for x in range(0, 5):
+for x in range(5):
     conta.adicione_juros()
 print(conta.saldo)
