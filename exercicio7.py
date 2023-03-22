@@ -26,7 +26,4 @@ class BichinhoVirtual:
     def aniversario(self):
         self.idade += 1
         print(f"Feliz aniversário! Agora seu bichinho tem {self.idade} anos!")
-
-
-
-
+#teste
