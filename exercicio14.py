@@ -22,7 +22,7 @@ class Funcionario:
         return self.salario
 
 
-jose = Funcionario("José", 1500.00)
+jose = Funcionario("José", 15000.00)
 print(jose.get_nome())
 print(jose.get_salario())
 jose.aumentar_salario(10)
