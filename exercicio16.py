@@ -4,8 +4,8 @@ import random
 class NovoBichinhoVirtual:
     def __init__(self):
         self.nome = "Sem nome"
-        self.fome = random.randint(0, 101)
-        self.saude = random.randint(0, 101)
+        self.fome = random.randint(1, 101)
+        self.saude = random.randint(1, 101)
         self.idade = 0
         self.humor = (self.saude + self.fome) / 2
 
@@ -119,3 +119,6 @@ if __name__ == '__main__':
     bicho = NovoBichinhoVirtual()
     while True:
         bicho.menu()
+        if bicho.idade == 30 or bicho.saude == 0 or bicho.fome == 0:
+            print(f"{bicho.nome} faleceu RIP")
+            break
