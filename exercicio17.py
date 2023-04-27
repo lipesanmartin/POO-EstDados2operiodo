@@ -1,3 +1,5 @@
+# revisado para tratar um bicho virtual por vez.
+
 from exercicio16 import NovoBichinhoVirtual
 
 bicho1 = NovoBichinhoVirtual()
