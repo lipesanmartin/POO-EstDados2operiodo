@@ -1,30 +1,36 @@
 class Macaco:
-    def __init__(self, nome):
-        self.nome = nome
+    def __init__(self):
+        self.nome = None
         self.bucho = []
 
+    def set_nome(self):
+        self.nome = input("Nome do macaco: ")
+
     def comer(self, comida):
-        self.bucho.append(comida)
-        print(f"Macaco {self.nome} comeu {comida}.")
+        if isinstance(comida, Macaco):
+            print("Macaco não come macaco.")
+        else:
+            self.bucho.append(comida)
+            print(f"Macaco {self.nome} comeu {comida}.")
 
     def ver_bucho(self):
         print(f"Macaco {self.nome} possui", *self.bucho, "em seu estômago.")
 
     def digerir(self):
-        del(self.bucho[0])
+        del (self.bucho[0])
 
 
-nome1 = str(input("Nomeie o primeiro macaco: "))
-nome2 = str(input("Nomeie o segundo macaco: "))
+if __name__ == '__main__':
+    macaco1 = Macaco()
+    macaco2 = Macaco()
 
-macaco1 = Macaco(nome1)
-macaco2 = Macaco(nome2)
+    comidas = ["banana", "melancia", "goiaba", "mamão"]
+    macaco1.set_nome()
+    macaco2.set_nome()
 
-comidas = ["banana", "melancia", "goiaba", "mamão"]
+    for x in comidas:
+        macaco1.comer(x)
+        macaco1.ver_bucho()
+        macaco1.digerir()
 
-for x in comidas:
-    macaco1.comer(x)
-    macaco1.ver_bucho()
-    macaco1.digerir()
-
-macaco2.comer(macaco1)
+    macaco2.comer(macaco1)
