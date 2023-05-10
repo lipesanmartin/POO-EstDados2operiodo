@@ -21,7 +21,6 @@ class Macaco:
         del (self.bucho[0])
 
 
-
 if __name__ == '__main__':
     macaco1 = Macaco()
     macaco2 = Macaco()
