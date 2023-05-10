@@ -8,7 +8,7 @@ class Macaco:
 
     def comer(self, comida):
         if isinstance(comida, Macaco):
-            print("Macaco não come macaco.")
+            print("Macaco não é canibal, não come macaco.")
         else:
             self.bucho.append(comida)
             print(f"Macaco {self.nome} comeu {comida}.")
@@ -17,7 +17,9 @@ class Macaco:
         print(f"Macaco {self.nome} possui", *self.bucho, "em seu estômago.")
 
     def digerir(self):
+        print(f"{self.nome} digeriu {self.bucho[0]}")
         del (self.bucho[0])
+
 
 
 if __name__ == '__main__':
